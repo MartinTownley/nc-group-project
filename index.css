@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 
-#header {
-    color:aqua
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
 }
-

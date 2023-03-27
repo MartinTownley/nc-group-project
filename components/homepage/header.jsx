@@ -1,13 +1,14 @@
-
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import {View} from "react-native"
+import reactDom from "react-dom";
 
 const Header = () => {
     return (
-        <section>
-            <h1 className="header">This is the header!</h1>
-            <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-        </section>
+        <View>
+            <h1>This is the header!</h1>
+            <h1>Hello world!</h1>
+        </View>
     )
 }
 

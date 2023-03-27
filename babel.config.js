@@ -17,3 +17,12 @@ module.exports = function (api) {
     ],
   };
 };
+
+module.exports = {
+  plugins: [],
+  plugins: ["nativewind/babel"],
+};
+
+module.exports = {
+  presets: ["@babel/preset-react"],
+};

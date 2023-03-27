@@ -3,11 +3,10 @@ import React from "react";
 import {View} from "react-native"
 import reactDom from "react-dom";
 
+const Profile = () => {
+    return (
+        <div></div>
+    )
+}
 
-const Dashboard = (()=>{
-    return (<div>
-        
-    </div>)
-})
-
-export default Dashboard;
+export default Profile;

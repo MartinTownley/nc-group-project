@@ -4,10 +4,10 @@ import {View} from "react-native"
 import reactDom from "react-dom";
 
 
-const Dashboard = (()=>{
+const StartScreen = (()=>{
     return (<div>
         
     </div>)
 })
 
-export default Dashboard;
+export default StartScreen;
