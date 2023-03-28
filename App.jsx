@@ -18,6 +18,8 @@ import NavBar from "./components/Homepage/NavBar";
 import Homepage from "./components/Homepage/Homepage"
 import AddTrip from "./components/Add Trip/AddTrip"
 import ManageHoliday from "./components/Manage Holiday/ManageHoliday"
+import HolidayDashboard from "./components/Manage Holiday/HolidayDashboard"
+
 import OnboardingMain from "./components/Onboarding/OnboardingMain"
 import ProfileAndSettings from "./components/Profile+Settings/ProfileAndSettings"
 import MainContainer from "./components/screens/MainContainer";
@@ -30,7 +32,17 @@ import { Configuration, OpenAIApi } from "openai";
 
 
 const Stack = createNativeStackNavigator();
+import { ThemeProvider, createTheme } from '@rneui/themed';
 
+const theme = createTheme({
+  lightColors: {
+    primary: '#e7e7e8',
+  },
+  darkColors: {
+    primary: '#000',
+  },
+  mode: 'light',
+});
 
 
 export default function App() {
@@ -47,7 +59,7 @@ export default function App() {
   const [newComment, setNewComment] = useState()
   
   
-  return (
+  return (<ThemeProvider theme={theme}>
     <NavigationContainer>
       <Stack.Navigator>
    
@@ -81,36 +93,36 @@ export default function App() {
    
           /* <Stack.Screen
           name="Home"
-          component={HomeScreen}
+          component={Homepage}
           options={{title: 'Welcome back (user name)'}}
         />
         <Stack.Screen
           name="Add Holiday"
-          component={HomeScreen}
+          component={Homepage}
           options={{title: 'Welcome'}}
         />
         <Stack.Screen
           name="More"
-          component={HomeScreen}
+          component={Homepage}
           options={{title: 'Manage Your Account'}}
         />
         
         <Stack.Screen
           name="Onboarding"
-          component={HomeScreen}
+          component={Homepage}
           options={{title: 'Welcome to TravelRouter'}}
         />
 
         <Stack.Screen
           name="StopPage"
-          component={HomeScreen}
+          component={Homepage}
           options={{title: 'Holiday Stop- (City name)'}}
         />  
 
         <Stack.Screen
           name="Manage Holiday"
-          components={{HolidayDashboard}{HolidayStopCard}}
+          component={HolidayDashboard}
           options={{title: 'Holiday Destination'}}
-        />   */
-  );
+        />
+  </ThemeProvider>);
 }

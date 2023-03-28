@@ -20,7 +20,7 @@ module.exports = function (api) {
 
 module.exports = {
   plugins: [],
-  plugins: ["nativewind/babel"],
+  // plugins: ["nativewind/babel"],
 };
 
 module.exports = {
