@@ -13,17 +13,14 @@ import {
   StyleSheet,
 } from "react-native";
 import { useState } from "react";
-import Dashboard from "./components/Homepage/Dashboard"
-import ListOfTrips from "./components/Homepage/ListOfTrips"
-import SocialFeed from "./components/Homepage/SocialFeed"
 import Header from "./components/Homepage/Header"
-import CommentsSection from "./components/Manage Holiday/CommentsSection"
-import HolidayDashboard from "./components/Manage Holiday/HolidayDashboard"
-import HolidayStopCard from "./components/Manage Holiday/HolidayStopCard"
-import HolidayStopPage from "./components/Manage Holiday/HolidayStopPage"
 import NavBar from "./components/Homepage/NavBar";
-
-
+import Homepage from "./components/Homepage/Homepage"
+import AddTrip from "./components/Add Trip/AddTrip"
+import ManageHoliday from "./components/Manage Holiday/ManageHoliday"
+import OnboardingMain from "./components/Onboarding/OnboardingMain"
+import ProfileAndSettings from "./components/Profile+Settings/ProfileAndSettings"
+import MainContainer from "./components/screens/MainContainer";
 
 import axios from "axios";
 //import { config } from "dotenv"; <--- don't need this, as React already has dotenv under the hood
@@ -70,9 +67,18 @@ export default function App() {
           options={{title: 'Manage Your Account'}}
         />
                             </Stack.Navigator>
+
+    <View>
+            < Header />
+            < AddTrip />
+            < Homepage />
+            < ManageHoliday />
+            < OnboardingMain />
+            < ProfileAndSettings />
+    </View>
+
                     </NavigationContainer>
-
-
+   
           /* <Stack.Screen
           name="Home"
           component={HomeScreen}

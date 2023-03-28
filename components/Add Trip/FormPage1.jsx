@@ -4,10 +4,13 @@ import {View} from "react-native"
 import reactDom from "react-dom";
 
 
-const FormPage1 = (()=>{
-    return (<div>
-        
-    </div>)
+export const FormPage1 = (()=>{
+    return (
+        <View>
+            <p> Form page 1</p>
+        </View>
+        )
 })
 
-export default FormPage1;
+
+export default FormPage1
