@@ -5,13 +5,19 @@ import reactDom from "react-dom";
 import FormPage1 from "./FormPage1";
 import FormPage2 from "./FormPage2";
 
-
+<div>
+        
+        </div>
 
 const AddHolidayForm = (()=>{
-    return (<div>
+    return (
+        <View>
+        <p> add holiday form▼▼</p>
         <FormPage1/>
         <FormPage2/>
-    </div>)
+
+        </View>
+    )
 })
 
-export default AddHolidayForm;
+export default AddHolidayForm

@@ -6,8 +6,7 @@ import reactDom from "react-dom";
 const Header = () => {
     return (
         <View>
-            <h1>This is the header!</h1>
-            <h1>Hello world!</h1>
+            <h1>This is the header</h1>
         </View>
     )
 }

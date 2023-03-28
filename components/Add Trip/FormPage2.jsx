@@ -5,9 +5,11 @@ import reactDom from "react-dom";
 
 
 const FormPage2 = (()=>{
-    return (<div>
-        
-    </div>)
+    return (
+        <View>
+            <p> Form page 2</p>
+        </View>
+    )
 })
 
-export default FormPage2;
+export default FormPage2

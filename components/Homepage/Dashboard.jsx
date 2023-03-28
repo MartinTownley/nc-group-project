@@ -4,10 +4,11 @@ import {View} from "react-native"
 import reactDom from "react-dom";
 
 
-const ListOfTrips = (()=>{
-    return (<div>
-
+const Dashboard = (()=>{
+    return (
+    <div>
+        
     </div>)
 })
 
-export default ListOfTrips;
+export default Dashboard;
