@@ -2,19 +2,22 @@ import Dashboard from "./Dashboard"
 import ListOfTrips from "./ListOfTrips";
 import SocialFeed from "./SocialFeed";
 import React from "react";
-import {Button, View} from "react-native"
+import {ScrollView, View} from "react-native"
+import { Button, Icon } from "@rneui/themed";
+
+
 
 
 
  const Homepage = (()=>{
 
     return (
-        <View>
-            <p>this is the homepage container</p>
+        <ScrollView>
+            <h2>Welcome back, (username)</h2>   
             < Dashboard />
             < ListOfTrips />
             < SocialFeed />
-        </View>
+        </ScrollView>
     )
 
 })

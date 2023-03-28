@@ -13,6 +13,7 @@ const ManageHoliday = (()=>{
 
     return (
         <View>
+             < Header />
             <p>This is manage holiday▼▼▼</p>
             < HolidayDashboard />
             < ListOfStops />

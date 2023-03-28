@@ -76,5 +76,5 @@ subheaderText: {
 },
 });
 
-export default Header;
+export default DashboardHeader;
 
