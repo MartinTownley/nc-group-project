@@ -98,7 +98,7 @@ export default function App() {
       coordinates: { lat: 53.4818756, lng: -2.2478721 }
     }
   ]]
-  const testHolidays= [{destinations:[{nam}]}]
+  const testHolidays= [{destinations:[{name}]}]
 
   const [isLoading, setIsLoading] = useState()
   const [user, setUser] = useState({name:"guest"})
@@ -144,6 +144,7 @@ export default function App() {
           options={{title: 'Holiday Destination'}}
           />
           </Stack.Navigator>
+          < AddTrip />
           </NavigationContainer>
   </ThemeProvider>);
 }
